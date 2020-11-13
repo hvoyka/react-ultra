@@ -1,5 +1,5 @@
-import React from 'react'
-import { Nav, NavbarContainer } from './Navbar.elements'
+import React from 'react';
+import { Nav, NavbarContainer, NavLogo, NavIcon} from './Navbar.elements';
 
 
 const Navbar = () => {
@@ -7,7 +7,10 @@ const Navbar = () => {
     <>
       <Nav>
         <NavbarContainer>
-            
+            <NavLogo to='/'>
+              <NavIcon/>
+              ULTRA
+            </NavLogo>
         </NavbarContainer>
       </Nav>
     </>
