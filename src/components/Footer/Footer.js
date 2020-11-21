@@ -1,4 +1,5 @@
 import React from 'react';
+import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin} from 'react-icons/fa'
 import { Button } from '../../globalStyles';
 import { FooterContainer, 
   FooterSubscription, 
@@ -10,7 +11,14 @@ import { FooterContainer,
   FooterLinksWrapper,
   FooterLinkItems,
   FooterLinkTitle,
-  FooterLink
+  FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  WebsiteRight,
+  SocialIcon,
+  SocialIconLink,
+  SocialLogo,
+  SocialIcons
 } from './Footer.elements';
 
 const Footer = () => {
@@ -62,6 +70,32 @@ const Footer = () => {
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <SocialLogo to='/'>
+            <SocialIcon/>
+            ULTRA
+          </SocialLogo>
+          <WebsiteRight>ULTRA &copy; 2020</WebsiteRight>
+          <SocialIcons>
+            <SocialIconLink href='/' target='_blank' aria-labe='FaceBook'>
+              <FaFacebook/>
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-labe='Instagram'>
+              <FaInstagram/>
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-labe='Youtube'>
+              <FaYoutube/>
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-labe='Twitter'>
+              <FaTwitter/>
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-labe='LinkedIn'>
+              <FaLinkedin/>
+            </SocialIconLink>
+          </SocialIcons>
+        </SocialMediaWrap>
+      </SocialMedia>
     </FooterContainer>
   )
 }
